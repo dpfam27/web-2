@@ -3,7 +3,7 @@ services:
     image: php:8.2-apache
     container_name: myapp-php
     volumes:
-      - ../../php:/var/www/html
+      - ./php:/var/www/html
     ports:
       - "8080:80"
     depends_on:
